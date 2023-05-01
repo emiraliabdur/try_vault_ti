@@ -45,7 +45,8 @@ Single POST-endpoint to upload a file
   {"id":"7558","customer_id":"800","load_amount":"$3680.19","time":"2000-01-17T22:02:34Z"}
   ...
   ``
-- Example of format for downloading file :
+- Example of format for downloading file:
+
   ``
   {"id":"10694","customer_id":"1","accepted":true}
   {"id":"15089","customer_id":"205","accepted":false}
