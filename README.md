@@ -39,19 +39,19 @@ Limit values can be changed through database table.
 Single POST-endpoint to upload a file
 `<host>/upload`
 
-- Example of format for uploading file :
-  ``
-  {"id":"10285","customer_id":"171","load_amount":"$4961.88","time":"2000-01-17T21:01:12Z"}
-  {"id":"7558","customer_id":"800","load_amount":"$3680.19","time":"2000-01-17T22:02:34Z"}
-  ...
-  ``
-- Example of format for downloading file:
+- Example of the format for an uploading file:
 
-  ``
+  ```text
+    {"id":"10285","customer_id":"171","load_amount":"$4961.88","time":"2000-01-17T21:01:12Z"}
+    {"id":"7558","customer_id":"800","load_amount":"$3680.19","time":"2000-01-17T22:02:34Z"}
+  ```
+
+- Example of the format for a downloading file:
+
+  ```text
   {"id":"10694","customer_id":"1","accepted":true}
   {"id":"15089","customer_id":"205","accepted":false}
-  ...
-  ``
+  ```
 
 
 ## Build Process
