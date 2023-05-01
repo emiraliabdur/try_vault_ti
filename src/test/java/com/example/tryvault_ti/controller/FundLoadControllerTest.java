@@ -2,7 +2,6 @@ package com.example.tryvault_ti.controller;
 
 import com.example.tryvault_ti.service.FundLoadService;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -10,7 +9,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
-import org.springframework.test.web.servlet.ResultActions;
 import org.springframework.transaction.annotation.Transactional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -60,8 +58,8 @@ class FundLoadControllerTest {
     }
 
     private String expectedResponseData() {
-        return "{\"id\":7558,\"customerId\":800,\"accepted\":true}\n" +
-                "{\"id\":10285,\"customerId\":171,\"accepted\":true}\n";
+        return "{\"id\":7558,\"accepted\":true,\"customer_id\":800}\n" +
+                "{\"id\":10285,\"accepted\":true,\"customer_id\":171}\n";
     }
 
 }

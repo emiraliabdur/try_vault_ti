@@ -1,5 +1,6 @@
 package com.example.tryvault_ti.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,6 +10,8 @@ import lombok.NoArgsConstructor;
 @Data
 public class FundLoadResult {
     private Long id;
+
+    @JsonProperty("customer_id")
     private Long customerId;
     private Boolean accepted;
 
